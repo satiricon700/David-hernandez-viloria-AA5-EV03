@@ -1,34 +1,23 @@
-Evidencia de desempeño: GA7-220501096-AA5-EV01 Diseño y desarrollo de servicios web – caso
+ API Peluquería & Spa Bella
 
-Autor: David  herbandez viloria
-Instructor: Luis Edilberto
+Este proyecto corresponde a la Evidencia EV03 del programa formativo. Consiste en el diseño y desarrollo de una API REST que representa los servicios de una peluquería/spa/estética.
 
-Descripción: Servicio web básico en Node.js y Express que permite el registro de usuarios y el inicio de sesión. El sistema recibe usuario y contraseña, valida la autenticación y devuelve un mensaje de éxito o error.
+Tecnologías utilizadas
 
-Características:
+- Node.js
+- Express.js
+- Postman (para pruebas)
+- Git y GitHub (versionamiento)
 
-    Endpoint POST /register: registra usuario y contraseña.
+---
 
-    Endpoint POST /login: valida credenciales y responde autenticación satisfactoria o error.
+  Endpoints disponibles
 
-    Código comentado para facilitar comprensión.
+1. Autenticación
 
-    Proyecto versionado con Git y repositorio en GitHub.
+POST /register
+Registra un nuevo usuario.
 
-Instalación y ejecución:
-
-    Clonar el repositorio.
-
-    Instalar dependencias con npm install.
-
-    Ejecutar con node server.js.
-
-    Acceder a http://localhost:3000.
-
-Entrega: La carpeta comprimida incluye:
-
-    Archivos del proyecto.
-
-    Archivo con enlace al repositorio.
-
-    Nombre del archivo: DAVID_AA5_EV01.zip
+-Body (JSON):**
+```json
+{ "usuario": "david", "contraseña": "12345" }
